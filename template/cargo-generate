@@ -1,0 +1,7 @@
+# $ cargo install cargo-generate
+# Add this file to ~/.cargo/
+# Create new cargo with: cargo generate aoc
+
+[favorites.aoc]
+git = "https://github.com/mmenzyns/aoc-2021"
+subfolder = "template"
