@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'd4p1'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=d4p1",
+                    "--package=d4p1"
+                ],
+                "filter": {
+                    "name": "d4p1",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": { "RUST_BACKTRACE": "1" }
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'd4p1'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=d4p1",
+                    "--package=d4p1"
+                ],
+                "filter": {
+                    "name": "d4p1",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": { "RUST_BACKTRACE": "1" }
+        }
+    ]
+}
